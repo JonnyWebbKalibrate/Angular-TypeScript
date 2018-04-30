@@ -1,4 +1,3 @@
-/*
 module app.common {
 
     var mockResource = angular
@@ -12,27 +11,27 @@ module app.common {
         var products: app.domain.IProduct[] = [];
         var product: app.domain.IProduct;
 
-        product = new app.domain.Product(1, "Leaf Rake", "GDN-0011", new Date(2009, 2, 19), 19.95,
+        product = new app.domain.Product("Leaf Rake", 1, "GDN-0011", new Date(2009, 2, 19), 19.95,
             "Leaf rake with 48-inch wooden handle.",
             "http://openclipart.org/image/300px/svg_to_png/26215/Anonymous_Leaf_Rake.png");
         products.push(product);
 
-        product = new app.domain.Product(2, "Garden Cart", "GDN-0023", new Date(2010, 2, 18), 26.95,
+        product = new app.domain.Product("Garden Cart", 2, "GDN-0023", new Date(2010, 2, 18), 26.95,
             "15 gallon capacity rolling garden cart",
             "http://openclipart.org/image/300px/svg_to_png/58471/garden_cart.png");
         products.push(product);
 
-        product = new app.domain.Product(3, "Saw", "TBX-002", new Date(2002, 3, 1), 16.95,
+        product = new app.domain.Product("Saw", 3, "TBX-002", new Date(2002, 3, 1), 16.95,
             "15-inch steel blade hand saw",
             "http://openclipart.org/image/300px/svg_to_png/27070/egore911_saw.png");
         products.push(product);
  
-         product = new app.domain.Product(4, "Hammer", "TBX-0048", new Date(2013, 4, 21), 8.99,
+         product = new app.domain.Product("Hammer", 4, "TBX-0048", new Date(2013, 4, 21), 8.99,
             "Curved claw steel hammer",
             "http://openclipart.org/image/300px/svg_to_png/73/rejon_Hammer.png");
         products.push(product);
         
-         product = new app.domain.Product(5, "Video Game Controller", "GMG-0042", new Date(2012, 9, 25), 35.95,
+         product = new app.domain.Product("Video Game Controller", 5, "GMG-0042", new Date(2012, 9, 25), 35.95,
             "Standard five-button video game controller",
             "http://openclipart.org/image/300px/svg_to_png/120337/xbox-controller_01.png");
         products.push(product);
@@ -68,4 +67,3 @@ module app.common {
         $httpBackend.whenGET(/app/).passThrough();
     }
 }
-*/
